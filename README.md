@@ -15,6 +15,7 @@ on HabitRPG.
 2. Put `putMeInPomodoro.applescript` into the "Start" field of
 the Scripts tab in the Pomodoro app.
 3. Put `add_habit.py` into `/Applications/Pomodoro.app/Contents/Resources`.
+4. Put your API key and User ID at the top of add_habit.py
 
 The first line of `add_habit.py` is the location of your Python distribution,
 which you can find with `which python`. 
