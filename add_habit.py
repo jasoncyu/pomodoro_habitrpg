@@ -11,7 +11,8 @@ task = sys.argv[1]
 headers = {'content-type': 'application/json',
            'x-api-user': API_USER,
            'x-api-key': API_KEY}
-payload = {"text": task, "type":"todo"}
+           
+payload = {"text": task, "type":"todo", "completed": "false", "value": 1}
 
 r = requests.post('https://habitrpg.com/api/v1/user/task', data=json.dumps(payload), headers=headers)
 
